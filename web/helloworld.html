@@ -9,7 +9,13 @@
     <script src="packages/browser/dart.js"></script>
   </head>
   <body>
-    <my-widget></my-widget>
-    <awesome-widget></awesome-widget>
+    <div my-controller>
+      <input type="text" ng-model="ctrl.visible">
+      <div on-click="ctrl.onNewClick()">
+        <span>foo</span>
+        <p>bar</p>
+        <p on-abc="ctrl.onAbc()">thee</p>
+      </div>
+    </div>
   </body>
 </html>
